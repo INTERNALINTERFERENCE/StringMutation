@@ -3,6 +3,8 @@
 using StringMutation;
 
 const string constStr = "000";
-IlMutation.Mutate(constStr);
+//IlMutation.Mutate(constStr);
+//Marshal.Mutate(constStr);
+Marshal.UnsafeMutate(constStr);
 var nonConst = "000";
 Console.WriteLine(nonConst);
